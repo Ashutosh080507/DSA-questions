@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+    int T;
+    scanf("%d",&T);
+    while(T>0)
+    {
+        T--;
+        double A,B,C;
+        scanf("%lf",&A);
+        scanf("%lf",&B);
+        scanf("%lf",&C);
+        if((A+B)/2 > C)
+        {
+            printf("YES\n");
+        }
+        else
+        printf("NO\n");
+    }
+}
+
