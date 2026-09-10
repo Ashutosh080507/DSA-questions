@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	while(t>0)
+	{
+	    t--;
+	    float x,y,z;
+	    scanf("%f",&x);
+	    scanf("%f",&y);
+	    scanf("%f",&z);
+	    if((x*y)/2<z)
+	    {
+	        printf("YEs\n");
+	    }
+	    else
+	    printf("NO\n");
+	}
+
+}
+
