@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	while(t>0)
+	{
+	    t--;
+	    int x,y,bag;
+	    scanf("%d",&x);
+	    scanf("%d",&y);
+	    bag=(x*y)/100;
+	    printf("%d \n",bag);
+	}
+
+}
+
