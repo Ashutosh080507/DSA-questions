@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	while(t>0)
+	{
+	    t--;
+	    int b1,b2,b3,sum;
+	    scanf("%d",&b1);
+	    scanf("%d",&b2);
+	    scanf("%d",&b3);
+	    sum=b1+b2+b3;
+	    if(sum>=2)
+	    {
+	        printf("Not NOw\n");
+	    }
+	    else
+	    {
+	        printf("Water Filling Time\n");
+	    }
+	}
+
+}
+
