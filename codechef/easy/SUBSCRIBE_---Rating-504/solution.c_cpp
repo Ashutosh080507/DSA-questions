@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t,sub1,cost;
+	scanf("%d",&t);
+	while(t>0)
+	{
+	    t--;
+	    int x,n,c=0;
+	    scanf("%d",&n);
+	    scanf("%d",&x);
+	    if(n%6!=0)
+	    {
+	        c++;
+	    }
+	    sub1=n/6+c;
+	    cost=sub1*x;
+	    printf("%d\n",cost);
+	}
+
+}
+
