@@ -51,7 +51,7 @@ yes
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-10T17:57:47.488Z  
+**Submitted:** 2026-10-16T16:56:57.122Z  
 
 ```c_cpp
 #include <stdio.h>
@@ -63,22 +63,30 @@ int main() {
 	while(t>0)
 	{
 	    t--;
-	    int n,i,c=0;
-	    scanf("%d",&n);
-	    for(i=2;i<n;i++)
+	    int i,flag=0;
+	    long long n;
+	    scanf("%lld",&n);
+	    if(n<=1)
+	    {
+	        printf("no\n");
+	        continue;
+	    }
+	    for(i=2;i*i<=n;i++)
 	    {
 	        if(n%i==0)
 	        {
-	            c++;
+	            flag=1;
 	            break;
 	        }
+	        
 	    }
-	    if(c>0)
+	    if(flag==1)
 	    printf("no\n");
 	    else
 	    printf("yes\n");
 	    
 	}
+	return 0;
 
 }
 
